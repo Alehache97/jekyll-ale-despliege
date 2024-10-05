@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "Introducción a Git",
+      "description" : "",
+      "tags"     : "tips, git, software",
+      "url"      : "/git/",
+      "date"     : "2024-10-01 12:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Pasos para realizar un Pull Request en GitHub",
+      "description" : "",
+      "tags"     : "GitHub, Repostorios Remotos, IAW",
+      "url"      : "/github/",
+      "date"     : "2024-09-29 13:30:00 +0200"
+    } 
+  
+]

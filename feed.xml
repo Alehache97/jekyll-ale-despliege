@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-ES"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://klise.now.sh/feed.xml" rel="self" type="application/atom+xml" /><link href="https://klise.now.sh/" rel="alternate" type="text/html" hreflang="es-ES" /><updated>2024-10-05T17:42:35+02:00</updated><id>https://klise.now.sh/feed.xml</id><title type="html">OPENALE 3.0</title><subtitle>Plataforma Educatica Informática</subtitle><author><name>OPENALE 3.0</name><email>alejandro@gmail.com</email></author><entry><title type="html">Introducción a Git</title><link href="https://klise.now.sh/git/" rel="alternate" type="text/html" title="Introducción a Git" /><published>2024-10-01T12:00:00+02:00</published><updated>2024-10-01T12:00:00+02:00</updated><id>https://klise.now.sh/git</id><content type="html" xml:base="https://klise.now.sh/git/"><![CDATA[<h1 id="git">Git</h1>
+
+<p><strong>Es un software de control de versiones diseñado por Linus Torvalds. Nos ayuda a llevar registro de los cambios de los ficheros de un repositorio (directorio) local.</strong></p>
+
+<h3 id="instalación-de-git">Instalación de Git</h3>
+
+<p><em>Instalación de git:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>apt <span class="nb">install </span>git
+</code></pre></div></div>
+
+<p><em>Configuración de git:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"José Domingo Muñoz"</span>
+git config <span class="nt">--global</span> user.email josedom@correo.com
+</code></pre></div></div>
+
+<h3 id="uso-básico-de-git">Uso básico de git</h3>
+
+<p><em>Creamos un directorio</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>curso-de-git
+<span class="nv">$ </span><span class="nb">cd </span>curso-de-git
+</code></pre></div></div>
+
+<p><em>Inicializamos el repositorio:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git init
+Inicializado repositorio Git vacío en ...
+</code></pre></div></div>
+
+<p><em>Se ha creado el directorio .git. El fichero de configuración del repositorio en .git/config</em></p>
+
+<h3 id="añadir-ficheros">Añadir Ficheros</h3>
+
+<p><em>Añadimos un nuevo fichero al repositorio:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Esto es una prueba"</span><span class="o">&gt;</span>ejemplo.txt
+git add ejemplo.txt
+</code></pre></div></div>
+
+<p><em>Y confirmamos los cambios:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"He creado el fichero ejemplo.txt"</span>
+</code></pre></div></div>
+
+<h3 id="modificar-un-fichero">Modificar un fichero</h3>
+
+<p><em>Al modificar un fichero, podemos confirmar el cambio pero tenemos que usar la opción a</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano ejemplo.txt
+git commit <span class="nt">-am</span> <span class="s2">"He modificado el fichero ejemplo.txt"</span>
+</code></pre></div></div>
+
+<h3 id="estado-del-repositorio">Estado del repositorio</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div></div>
+
+<p><em>Listado de commits:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+</code></pre></div></div>
+
+<h3 id="otras-operaciones">Otras operaciones</h3>
+
+<p><em>Cambiar nombre a fichero:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">mv </span>ejemplo.txt ejemplo2.txt
+git commit <span class="nt">-am</span> <span class="s2">"He cambiado el nombre del fichero"</span>
+</code></pre></div></div>
+
+<p><em>Eliminar un fichero</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm </span>ejemplo2.txt
+git commit <span class="nt">-am</span> <span class="s2">"He borrado el fichero ejemplo2
+</span></code></pre></div></div>
+
+<h3 id="volviendo-a-versiones-anteriores">Volviendo a versiones anteriores</h3>
+
+<p><em>Si queremos volver a un commit anterior sin perder las modificaciones posteriores</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;<span class="nb">id </span>del commit&gt;
+</code></pre></div></div>
+
+<p><em>Para volver a la última versión:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git switch -
+</code></pre></div></div>
+
+<p><em>Si quiero eliminar los últimos 3 commits:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reset <span class="nt">--hard</span> HEAD~3
+</code></pre></div></div>]]></content><author><name>OPENALE 3.0</name><email>alejandro@gmail.com</email></author><category term="tips" /><category term="git" /><category term="software" /><summary type="html"><![CDATA[Git]]></summary></entry><entry><title type="html">Pasos para realizar un Pull Request en GitHub</title><link href="https://klise.now.sh/github/" rel="alternate" type="text/html" title="Pasos para realizar un Pull Request en GitHub" /><published>2024-09-29T13:30:00+02:00</published><updated>2024-09-29T13:30:00+02:00</updated><id>https://klise.now.sh/github</id><content type="html" xml:base="https://klise.now.sh/github/"><![CDATA[<h1 id="pull-request">Pull Request:</h1>
+
+<h3 id="qué-es-un-pull-request">¿Qué es un Pull Request?</h3>
+
+<p><em>Un Pull Request es una petición que se hace al propietario de un repositorio original en GitHub para que este último incorpore los cambios que se sugieren. Los Pull Request se han convertido en la forma más habitual de colaborar en proyectos de software libre.</em></p>
+
+<h3 id="pasos-para-realizar-un-pull-request">Pasos para realizar un Pull Request:</h3>
+
+<p><img src="/assets/img/PR1.png" alt="1" /></p>
+
+<h3 id="sincronización-de-nuestro-fork-con-el-repositorio-original">Sincronización de nuestro Fork con el repositorio original.</h3>
+
+<p><img src="/assets/img/PR2.png" alt="2" /></p>
+
+<p><a href="https://www.josedomingo.org/pledin/2022/09/que-es-pull-requests/">¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request? </a></p>]]></content><author><name>OPENALE 3.0</name><email>alejandro@gmail.com</email></author><category term="GitHub" /><category term="Repostorios Remotos" /><category term="IAW" /><summary type="html"><![CDATA[Pull Request:]]></summary></entry></feed>

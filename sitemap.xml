@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://klise.now.sh/github/</loc>
+<lastmod>2024-09-29T13:30:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://klise.now.sh/git/</loc>
+<lastmod>2024-10-01T12:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://klise.now.sh/about/</loc>
+</url>
+<url>
+<loc>https://klise.now.sh/archive/</loc>
+</url>
+<url>
+<loc>https://klise.now.sh/</loc>
+</url>
+<url>
+<loc>https://klise.now.sh/tags/</loc>
+</url>
+</urlset>
